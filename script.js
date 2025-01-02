@@ -23,7 +23,7 @@ tailwind.config = {
             fontWeight: "bold",
           },
         ],
-        med: [
+        md: [
           "40px ",
           {
             lineHeight: "51px",
@@ -37,46 +37,11 @@ tailwind.config = {
             fontWeight: "bold",
           },
         ],
-        xsm: [
-          "32px ",
-          {
-            lineHeight: "40px",
-            fontWeight: "bold",
-          },
-        ],
-        baseLg: [
-          "26px ",
-          {
-            lineHeight: "28px",
-            fontWeight: "bold",
-          },
-        ],
-        baseMed: [
-          "24px ",
-          {
-            lineHeight: "28px",
-            fontWeight: "bold",
-          },
-        ],
         base: [
           "18px ",
           {
             lineHeight: "28px",
-            fontWeight: "medium",
-          },
-        ],
-        baseSm: [
-          "16px ",
-          {
-            lineHeight: "28px",
-            fontWeight: "medium",
-          },
-        ],
-        baseXSm: [
-          "14px ",
-          {
-            lineHeight: "28px",
-            fontWeight: "medium",
+            fontWeight: "normal",
           },
         ],
       },
