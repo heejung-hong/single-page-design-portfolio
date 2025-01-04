@@ -12,9 +12,28 @@
     <title>Single Page Design Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js" defer></script>
+    <style>
+      .mySlides, .mySlidesLeft, .mySlidesRight {
+        display: none;
+      }
+
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body
-    class="font-body bg-light-cream w-[400px] md:w-[768px] xl:w-[1440px] m-auto"
+    class="flex flex-col justify-center font-body bg-light-cream w-[400px] md:w-[768px] xl:w-[1440px] m-auto"
   >
     <header
       class="w-[343px] md:w-[689px] xl:w-[1111px] h-[100px] md:h-[170px] flex justify-between items-center m-auto"
@@ -32,7 +51,7 @@
     </header>
     <main class="flex flex-col justify-center">
       <div
-        class="text-[36px] md:text-md lg:text-lg font-bold leading-none w-[343px] md:w-[690px] xl:w-[800px] text-center mt-[25px] md:mt-[5px] m-auto"
+        class="text-[36px] md:text-[44px] xl:text-lg font-bold leading-none w-[343px] md:w-[700px] xl:w-[800px] text-center mt-[25px] md:mt-[5px] m-auto"
       >
         Design solutions made easy
       </div>
@@ -122,18 +141,18 @@
         </div>
       </div>
       <div
-        class="md:flex items-center xl:justify-between xl:w-[1111px] md:mt-[50px] xl:mt-[100px] md:ml-[-40px] xl:m-auto"
+        class="md:overflow-hidden  md:flex items-center xl:justify-between md:w-[768px] xl:w-[1111px] md:mt-[50px] xl:mt-[100px]  xl:m-auto"
       >
         <img
           src="./assets/image-amy.webp"
           alt="a young girl with blond wavy hair"
-          class="w-[300px] md:w-[364px] xl:w-[445px] h-[300px] md:h-[364px] xl:h-[445px] mt-[100px] m-auto md:m-0"
+          class="w-[300px] md:w-[364px] xl:w-[445px] h-[300px] md:h-[364px] xl:h-[445px] mt-[100px] m-auto md:m-0 md:ml-[-40px] xl:m-0"
         />
         <div
           class="md:w-[339px] xl:w-[540px] md:h-[364px] xl:h-[306px] md:ml-[65px]"
         >
           <div
-            class="text-[26px] md:text-sm xl:text-md font-bold text-center md:text-start w-[343px] md:w-[339px] xl:w-[540px] mt-[35px] m-auto md:mt-0"
+            class="text-[26px] md:text-sm xl:text-md font-bold text-center md:text-start w-[343px] md:w-[370px] xl:w-[540px] mt-[35px] m-auto md:mt-0"
           >
             I'm Amy, and I'd love to work on your next project
           </div>
@@ -153,27 +172,137 @@
           </div>
         </div>
       </div>
-
       <div class="text-[24px] md:text-sm font-bold text-center w-[343px] mt-[100px] m-auto">
         My Work
       </div>
-      <div class="mt-[25px] md:mt-[40px] m-auto">
-        <img
-          src="./assets/image-slide-1.jpg"
-          alt=""
-          class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] m-auto rounded-[10px]"
-        />
-        <div class="flex justify-center mt-[25px] md:mt-[40px] m-auto">
-          <div
-            class="grid justify-items-center content-center w-[64px] h-[64px] bg-black rounded-full mx-[5px] md:mx-[10px] cursor-pointer hover:bg-galactic-blue"
-          >
-            <img src="./assets/icon-arrow-left.svg" alt="left arrow button" />
+      <div class="overflow-hidden w-[343px] md:w-[768px] xl:w-[1111px] mt-[25px] md:mt-[40px] m-auto">
+        <div class="flex w-[852px] md:w-[1662px] ml-[-254px] md:ml-[-454px] xl:ml-[-284px]">
+          <div class="mx-[7px] md:mx-[20px]">
+            <div class="mySlidesLeft fade">
+              <img
+              src="./assets/image-slide-1.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>        
+            <div class="mySlidesLeft fade">
+              <img
+              src="./assets/image-slide-2.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>        
+            <div class="mySlidesLeft fade">
+              <img
+              src="./assets/image-slide-3.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>
+            <div class="mySlidesLeft fade">
+              <img
+              src="./assets/image-slide-4.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>
+            <div class="mySlidesLeft fade">
+              <img
+              src="./assets/image-slide-5.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>
           </div>
-          <div
-            class="grid justify-items-center content-center w-[64px] h-[64px] bg-black rounded-full mx-[5px] md:mx-[10px] cursor-pointer hover:bg-galactic-blue"
-          >
-            <img src="./assets/icon-arrow-right.svg" alt="left arrow button" />
+          <div class="mx-[7px]">
+            <div class="mySlides fade">
+              <img
+              src="./assets/image-slide-1.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>        
+            <div class="mySlides fade">
+              <img
+              src="./assets/image-slide-2.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>        
+            <div class="mySlides fade">
+              <img
+              src="./assets/image-slide-3.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>        
+            <div class="mySlides fade">
+              <img
+              src="./assets/image-slide-4.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>
+            <div class="mySlides fade">
+              <img
+              src="./assets/image-slide-5.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>
           </div>
+          <div class="mx-[7px]">       
+            <div class="mySlidesRight fade">
+              <img
+              src="./assets/image-slide-1.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>      
+            <div class="mySlidesRight fade">
+              <img
+              src="./assets/image-slide-2.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>      
+            <div class="mySlidesRight fade">
+              <img
+              src="./assets/image-slide-3.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>      
+            <div class="mySlidesRight fade">
+              <img
+              src="./assets/image-slide-4.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>        
+            <div class="mySlidesRight fade">
+              <img
+              src="./assets/image-slide-5.jpg"
+              alt=""
+              class="w-[270px] md:w-[540px] h-[180px] md:h-[360px] rounded-[10px]"
+              />
+            </div>                
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex justify-center mt-[25px] md:mt-[40px] m-auto">
+        <div
+          class="grid justify-items-center content-center w-[64px] h-[64px] bg-black rounded-full mx-[5px] md:mx-[10px] cursor-pointer hover:bg-galactic-blue"
+          onclick="plusSlides(-1)"
+        >
+          <img src="./assets/icon-arrow-left.svg" alt="left arrow button" />
+        </div>
+        <div
+          class="grid justify-items-center content-center w-[64px] h-[64px] bg-black rounded-full mx-[5px] md:mx-[10px] cursor-pointer hover:bg-galactic-blue"
+          onclick="plusSlides(1)"
+        >
+          <img src="./assets/icon-arrow-right.svg" alt="left arrow button" />
         </div>
       </div>
       <div
