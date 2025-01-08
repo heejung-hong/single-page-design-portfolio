@@ -27,10 +27,15 @@ Users should be able to:
 
 ### Screenshot
 
+![desktop](https://github.com/user-attachments/assets/31988e3f-26cb-4b2d-b3df-46e346b03207)
+![tablet](https://github.com/user-attachments/assets/387c225a-fbfd-496f-bf8c-daf9b6858ddc) <br>
+![mobile-1](https://github.com/user-attachments/assets/001b8a5b-d49d-41fe-94ea-97c84c1a4e4d)
+![mobile-2](https://github.com/user-attachments/assets/7f2c6bbc-48dc-4c6a-9491-2ce53eae255e)
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/heejung-hong/single-page-design-portfolio)
+- [Live Site URL](https://heejung-hong.github.io/single-page-design-portfolio/)
 
 ## My process
 
