@@ -106,3 +106,10 @@ function showSlidesRight(n) {
   }
   slidesRight[slideIndexRight - 1].style.display = "block";
 }
+
+document.getElementById("left").addEventListener("click", function (n) {
+  plusSlides(-1);
+});
+document.getElementById("right").addEventListener("click", function (n) {
+  plusSlides(1);
+});
